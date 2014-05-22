@@ -115,6 +115,7 @@
     <Compile Include="ViewModels\IViewModel.cs" />
     <Compile Include="ViewModels\Locator.cs" />
     <Compile Include="ViewModels\OtherViewModel.cs" />
+    <Compile Include="SampleData\SampleViewModel.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +123,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="DesignTimeExample_TemporaryKey.pfx" />
+    <None Include="SampleData\ViewModelSampleData.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Logo.scale-100.png" />

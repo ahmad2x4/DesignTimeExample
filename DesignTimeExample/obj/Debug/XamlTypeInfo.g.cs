@@ -198,6 +198,7 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
                 userType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_Locator;
                 userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -208,6 +209,7 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
             case 2:   //  DesignTimeExample.ViewModels.IViewModel
                 userType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -216,6 +218,7 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
                 userType.Activator = Activate_3_OtherViewModel;
                 userType.AddMemberName("Data");
                 userType.AddMemberName("Color");
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -228,12 +231,14 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
                 userType.Activator = Activate_5_ViewModel;
                 userType.AddMemberName("Data");
                 userType.AddMemberName("Color");
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 6:   //  DesignTimeExample.MainPage
                 userType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_6_MainPage;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -356,6 +361,7 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
         virtual public bool IsMarkupExtension { get { throw new global::System.NotImplementedException(); } }
         virtual public bool IsBindable { get { throw new global::System.NotImplementedException(); } }
         virtual public bool IsReturnTypeStub { get { throw new global::System.NotImplementedException(); } }
+        virtual public bool IsLocalType { get { throw new global::System.NotImplementedException(); } }
         virtual public global::Windows.UI.Xaml.Markup.IXamlType ItemType { get { throw new global::System.NotImplementedException(); } }
         virtual public global::Windows.UI.Xaml.Markup.IXamlType KeyType { get { throw new global::System.NotImplementedException(); } }
         virtual public object ActivateInstance() { throw new global::System.NotImplementedException(); }
@@ -380,6 +386,7 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
         bool _isMarkupExtension;
         bool _isBindable;
         bool _isReturnTypeStub;
+        bool _isLocalType;
 
         string _contentPropertyName;
         string _itemTypeName;
@@ -404,6 +411,7 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
         override public bool IsMarkupExtension { get { return _isMarkupExtension; } }
         override public bool IsBindable { get { return _isBindable; } }
         override public bool IsReturnTypeStub { get { return _isReturnTypeStub; } }
+        override public bool IsLocalType { get { return _isLocalType; } }
 
         override public global::Windows.UI.Xaml.Markup.IXamlMember ContentProperty
         {
@@ -535,6 +543,11 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
         public void SetIsReturnTypeStub()
         {
             _isReturnTypeStub = true;
+        }
+
+        public void SetIsLocalType()
+        {
+            _isLocalType = true;
         }
 
         public void SetItemTypeName(string itemTypeName)

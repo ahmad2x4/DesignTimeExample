@@ -34,3 +34,40 @@ C:\Users\IrisDaniela\Documents\Visual Studio 2013\Projects\DesignTimeExample\Des
 C:\Users\IrisDaniela\Documents\Visual Studio 2013\Projects\DesignTimeExample\DesignTimeExample\obj\Debug\Assets\Styles.g.cs
 C:\Users\IrisDaniela\Documents\Visual Studio 2013\Projects\DesignTimeExample\DesignTimeExample\obj\Debug\Assets\Styles.xaml
 C:\Users\IrisDaniela\Documents\Visual Studio 2013\Projects\DesignTimeExample\DesignTimeExample\obj\Debug\Assets\Styles.xbf
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\bin\Debug\App.xbf
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\bin\Debug\Assets\Styles.xbf
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\bin\Debug\MainPage.xbf
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\bin\Debug\DesignTimeExample.xr.xml
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\bin\Debug\DesignTimeExample.exe
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\bin\Debug\DesignTimeExample.pdb
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\bin\Debug\resources.pri
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\bin\Debug\AppxManifest.xml
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\bin\Debug\DesignTimeExample.build.appxrecipe
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\App.g.i.cs
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\App.g.cs
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\Assets\Styles.g.i.cs
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\Assets\Styles.g.cs
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\MainPage.g.i.cs
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\MainPage.g.cs
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\XamlTypeInfo.g.cs
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\App.xaml
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\Assets\Styles.xaml
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\App.xbf
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\Assets\Styles.xbf
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\XamlSaveStateFile.xml
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\MainPage.xaml
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\MainPage.xbf
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\DesignTimeExample.exe
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\DesignTimeExample.pdb
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\priconfig.xml
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\priconfig.xml.intermediate
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\layout.resfiles
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\layout.resfiles.intermediate
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\resources.resfiles
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\resources.resfiles.intermediate
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\pri.resfiles
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\pri.resfiles.intermediate
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\qualifiers.txt
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\qualifiers.txt.intermediate
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Artis\Github\DesignTimeExample\DesignTimeExample\obj\Debug\ProjectArchitectures.txt

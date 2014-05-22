@@ -124,29 +124,27 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[10];
-            _typeNameTable[0] = "DesignTimeExample.DeleteMe";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "DesignTimeExample.ViewModels.Locator";
-            _typeNameTable[4] = "Object";
-            _typeNameTable[5] = "DesignTimeExample.ViewModels.IViewModel";
-            _typeNameTable[6] = "DesignTimeExample.ViewModels.OtherViewModel";
-            _typeNameTable[7] = "String";
-            _typeNameTable[8] = "DesignTimeExample.ViewModels.ViewModel";
-            _typeNameTable[9] = "DesignTimeExample.MainPage";
+            _typeNameTable = new string[9];
+            _typeNameTable[0] = "DesignTimeExample.ViewModels.Locator";
+            _typeNameTable[1] = "Object";
+            _typeNameTable[2] = "DesignTimeExample.ViewModels.IViewModel";
+            _typeNameTable[3] = "DesignTimeExample.ViewModels.OtherViewModel";
+            _typeNameTable[4] = "String";
+            _typeNameTable[5] = "DesignTimeExample.ViewModels.ViewModel";
+            _typeNameTable[6] = "DesignTimeExample.MainPage";
+            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.UserControl";
 
-            _typeTable = new global::System.Type[10];
-            _typeTable[0] = typeof(global::DesignTimeExample.DeleteMe);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::DesignTimeExample.ViewModels.Locator);
-            _typeTable[4] = typeof(global::System.Object);
-            _typeTable[5] = typeof(global::DesignTimeExample.ViewModels.IViewModel);
-            _typeTable[6] = typeof(global::DesignTimeExample.ViewModels.OtherViewModel);
-            _typeTable[7] = typeof(global::System.String);
-            _typeTable[8] = typeof(global::DesignTimeExample.ViewModels.ViewModel);
-            _typeTable[9] = typeof(global::DesignTimeExample.MainPage);
+            _typeTable = new global::System.Type[9];
+            _typeTable[0] = typeof(global::DesignTimeExample.ViewModels.Locator);
+            _typeTable[1] = typeof(global::System.Object);
+            _typeTable[2] = typeof(global::DesignTimeExample.ViewModels.IViewModel);
+            _typeTable[3] = typeof(global::DesignTimeExample.ViewModels.OtherViewModel);
+            _typeTable[4] = typeof(global::System.String);
+            _typeTable[5] = typeof(global::DesignTimeExample.ViewModels.ViewModel);
+            _typeTable[6] = typeof(global::DesignTimeExample.MainPage);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,11 +179,10 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_DeleteMe() { return new global::DesignTimeExample.DeleteMe(); }
-        private object Activate_3_Locator() { return new global::DesignTimeExample.ViewModels.Locator(); }
-        private object Activate_6_OtherViewModel() { return new global::DesignTimeExample.ViewModels.OtherViewModel(); }
-        private object Activate_8_ViewModel() { return new global::DesignTimeExample.ViewModels.ViewModel(); }
-        private object Activate_9_MainPage() { return new global::DesignTimeExample.MainPage(); }
+        private object Activate_0_Locator() { return new global::DesignTimeExample.ViewModels.Locator(); }
+        private object Activate_3_OtherViewModel() { return new global::DesignTimeExample.ViewModels.OtherViewModel(); }
+        private object Activate_5_ViewModel() { return new global::DesignTimeExample.ViewModels.ViewModel(); }
+        private object Activate_6_MainPage() { return new global::DesignTimeExample.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -197,61 +194,60 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  DesignTimeExample.DeleteMe
-                userType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_DeleteMe;
-                xamlType = userType;
-                break;
-
-            case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  DesignTimeExample.ViewModels.Locator
+            case 0:   //  DesignTimeExample.ViewModels.Locator
                 userType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_3_Locator;
+                userType.Activator = Activate_0_Locator;
                 userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Object
+            case 1:   //  Object
                 xamlType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  DesignTimeExample.ViewModels.IViewModel
+            case 2:   //  DesignTimeExample.ViewModels.IViewModel
                 userType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  DesignTimeExample.ViewModels.OtherViewModel
+            case 3:   //  DesignTimeExample.ViewModels.OtherViewModel
                 userType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_6_OtherViewModel;
+                userType.Activator = Activate_3_OtherViewModel;
                 userType.AddMemberName("Data");
                 userType.AddMemberName("Color");
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  String
+            case 4:   //  String
                 xamlType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  DesignTimeExample.ViewModels.ViewModel
+            case 5:   //  DesignTimeExample.ViewModels.ViewModel
                 userType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_8_ViewModel;
+                userType.Activator = Activate_5_ViewModel;
                 userType.AddMemberName("Data");
                 userType.AddMemberName("Color");
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  DesignTimeExample.MainPage
+            case 6:   //  DesignTimeExample.MainPage
                 userType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_MainPage;
+                userType.Activator = Activate_6_MainPage;
+                userType.SetIsLocalType();
                 xamlType = userType;
+                break;
+
+            case 7:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::DesignTimeExample.DesignTimeExample_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
@@ -365,6 +361,7 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
         virtual public bool IsMarkupExtension { get { throw new global::System.NotImplementedException(); } }
         virtual public bool IsBindable { get { throw new global::System.NotImplementedException(); } }
         virtual public bool IsReturnTypeStub { get { throw new global::System.NotImplementedException(); } }
+        virtual public bool IsLocalType { get { throw new global::System.NotImplementedException(); } }
         virtual public global::Windows.UI.Xaml.Markup.IXamlType ItemType { get { throw new global::System.NotImplementedException(); } }
         virtual public global::Windows.UI.Xaml.Markup.IXamlType KeyType { get { throw new global::System.NotImplementedException(); } }
         virtual public object ActivateInstance() { throw new global::System.NotImplementedException(); }
@@ -389,6 +386,7 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
         bool _isMarkupExtension;
         bool _isBindable;
         bool _isReturnTypeStub;
+        bool _isLocalType;
 
         string _contentPropertyName;
         string _itemTypeName;
@@ -413,6 +411,7 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
         override public bool IsMarkupExtension { get { return _isMarkupExtension; } }
         override public bool IsBindable { get { return _isBindable; } }
         override public bool IsReturnTypeStub { get { return _isReturnTypeStub; } }
+        override public bool IsLocalType { get { return _isLocalType; } }
 
         override public global::Windows.UI.Xaml.Markup.IXamlMember ContentProperty
         {
@@ -544,6 +543,11 @@ namespace DesignTimeExample.DesignTimeExample_XamlTypeInfo
         public void SetIsReturnTypeStub()
         {
             _isReturnTypeStub = true;
+        }
+
+        public void SetIsLocalType()
+        {
+            _isLocalType = true;
         }
 
         public void SetItemTypeName(string itemTypeName)

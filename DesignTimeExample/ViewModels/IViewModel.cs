@@ -6,5 +6,5 @@ namespace DesignTimeExample.ViewModels
     {
         string Data { get; }
         string Color { get; }
-    } 
+    }
 }
